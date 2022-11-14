@@ -7,7 +7,7 @@ st.set_page_config(page_title="Žaneta Tarabová - Vizáž a kozmetické služby
                    page_icon=":tada:", layout="wide")
 
 # st.title("Domů")
-st.sidebar.success("Select Page Above.")
+# st.sidebar.success("Select Page Above.")
 
 
 def load_lottieurl(url):
@@ -35,7 +35,7 @@ img_lottie_animation = Image.open("obrazky/obr2.png")
 
 
 with st.container():
-    st.subheader("Ahoj, ja som Žaneta :wave:")
+    st.subheader("Ahoj a vítej na mé stránce, menuji se Žaneta :wave:")
     st.title("Vizážistka a kozmetička")
     st.write("Poskytujem kozmetické služby so zameraním na vizáž a poradenstvo, pracujem s čisto prírodou kozmetikou, neagresívnou a netestovanou na zvieratách")
 
