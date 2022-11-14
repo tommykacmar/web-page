@@ -6,6 +6,9 @@ from streamlit_lottie import st_lottie
 st.set_page_config(page_title="Žaneta Tarabová - Vizáž a kozmetické služby",
                    page_icon=":tada:", layout="wide")
 
+# st.title("Domů")
+st.sidebar.success("Select Page Above.")
+
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -35,7 +38,6 @@ with st.container():
     st.subheader("Ahoj, ja som Žaneta :wave:")
     st.title("Vizážistka a kozmetička")
     st.write("Poskytujem kozmetické služby so zameraním na vizáž a poradenstvo, pracujem s čisto prírodou kozmetikou, neagresívnou a netestovanou na zvieratách")
-#    st.write("[Viac info >] (www.logiksro.sk")
 
 
 with st.container():
@@ -80,7 +82,7 @@ with st.container():
 
     # ----- ROZDELOVAC ------
     st.write("---")
-    st.header("Napíšte mi správu")
+    st.header("V prípade záujmu mi napíšte správu")
 
 # ----- MEDZERA -----
     st.write("##")
@@ -88,8 +90,10 @@ with st.container():
 # ---------- DOCUMENTATION https://https://formsubmit.co/ ----------
 contact_form = """
 <form action="https://formsubmit.co/zaneta.tarabova@gmail.com" method="POST">
+<!--
      <input type="text" name="name" placeholder="Zadajte meno" required>
      <input type="email" name="email" placeholder="Zadajte email" required>
+    -->     
      <textarea name="Správa" placeholder="Napíšte správu" required></textarea>
      <button type="submit">Send</button>
 </form>
