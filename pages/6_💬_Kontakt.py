@@ -21,7 +21,7 @@ with st.container():
 
 # ---------- MAPA ------------
 m = folium.Map(location=[50.075539, 14.437800],
-               zoom_start=20, width=500, height=500, position=str)
+               zoom_start=20, width=500, height=500)
 m
 
 # ----- MEDZERA -----

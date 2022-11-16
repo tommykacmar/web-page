@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="Žaneta Tarabová - Vizáž a kozmetické služby",
-                   page_icon=":tada:", layout="wide")
+                   page_icon=":sunny:", layout="wide")
 
 # st.title("Domů")
 # st.sidebar.success("Select Page Above.")
@@ -104,3 +104,4 @@ with left_column:
     st.markdown(contact_form, unsafe_allow_html=True)
 with right_column:
     st.empty()
+
