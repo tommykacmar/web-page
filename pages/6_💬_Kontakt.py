@@ -1,12 +1,12 @@
-from PIL import Image
+import gmaps
 import requests
 import streamlit as st
+from PIL import Image
+import folium
 
 
 with st.container():
 
-    # ----- ROZDELOVAC ------
-    st.write("---")
     st.header("Kontakt")
     st.write(
         """
@@ -16,11 +16,19 @@ with st.container():
             - .....................
             - ..........................
 
+
+
+
             """
     )
 
+# ---------- MAPA ------------
+m = folium.Map(location=[50.075539, 14.437800],
+               zoom_start=20, width=500, height=500, position=str)
+m
+
 # ----- MEDZERA -----
-    st.write("##")
+st.write("##")
 
 # ---------- FORMAT CONTACT FORMu ----------
 
